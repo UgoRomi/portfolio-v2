@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['var(--font-cal-sans)'],
-				josefin: ['var(--font-josefin)'],
+        josefin: ['var(--font-josefin)'],
       },
     },
   },

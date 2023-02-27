@@ -11,7 +11,11 @@ export default function Box({ className, children, icon }: Props) {
     <div
       className={cn('relative break-all rounded-lg p-8 text-4xl', className)}
     >
-      {!!icon && <span className='absolute top-1 right-1'>{icon}</span>}
+      {!!icon && (
+        <span className='float-left mr-4 sm:float-right sm:mr-0 sm:ml-4'>
+          {icon}
+        </span>
+      )}
       {children}
     </div>
   );
