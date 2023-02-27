@@ -5,7 +5,7 @@ import GitHub from '@/components/icons/github';
 
 export default function Page() {
   return (
-    <main className='px-6 pt-24 lg:px-36 2xl:px-96'>
+    <main className='px-6 pb-6 pt-24 lg:px-36 2xl:px-96'>
       <h1 className='mb-5 font-sans text-7xl font-semibold italic'>Ugo Romi</h1>
       <div className='grid grid-cols-2 gap-4 lg:grid-cols-6'>
         <Box className='col-span-2 flex items-center bg-fuchsia-500 text-4xl font-semibold lg:col-span-4'>
@@ -18,13 +18,22 @@ export default function Page() {
           <span className='break-normal text-3xl'>
             Check out my{' '}
             <a
-              className='cursor-fancy font-bold text-orange-500 underline decoration-dotted underline-offset-4'
+              className='cursor-fancy font-bold text-fuchsia-500 underline decoration-dotted underline-offset-4'
               href='https://cv.ugoromi.dev'
               target='_blank'
             >
               CV
             </a>
           </span>
+        </Box>
+        <Box className='border-4 border-amber-500 bg-stone-800 text-stone-900 lg:col-span-2'>
+          <a
+            className='cursor-fancy break-normal text-2xl italic text-fuchsia-500 underline decoration-dotted underline-offset-4'
+            href='https://cal.com/ugoromi/30min'
+            target='_blank'
+          >
+            Book a 30 min call with me
+          </a>
         </Box>
         <Box
           className='col-span-2 bg-black'
