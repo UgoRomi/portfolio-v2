@@ -9,14 +9,14 @@ interface Props extends PropsWithChildren {
 export default function Box({ className, children, icon }: Props) {
   return (
     <div
-      className={cn('relative break-all rounded-lg p-8 text-4xl', className)}
-    >
-      {!!icon && (
-        <span className='float-left mr-4 sm:float-right sm:mr-0 sm:ml-4'>
-          {icon}
-        </span>
+      className={cn(
+        'relative break-all rounded-xl p-8 text-4xl',
+        className,
+        !!icon ? 'flex gap-3' : ''
       )}
-      {children}
+    >
+      <span>{children}</span>
+      {!!icon && <span>{icon}</span>}
     </div>
   );
 }

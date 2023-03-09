@@ -92,12 +92,12 @@ export default async function TopTrack() {
   if (!topTrack) return null;
   return (
     <Box
-      className='col-span-2 bg-black text-stone-200 lg:col-span-3'
+      className='col-span-6 bg-stone-200 text-stone-800 lg:col-span-4'
       icon={<SpotifyIcon className='h-12 w-12' />}
     >
       Currently listening to{' '}
       <a
-        className='cursor-fancy font-bold text-[#1ed760] underline decoration-white decoration-wavy underline-offset-4'
+        className='cursor-fancy font-bold text-[#1ed760] underline decoration-stone-800 decoration-wavy underline-offset-4'
         href={topTrack.songUrl}
         target='_blank'
       >
