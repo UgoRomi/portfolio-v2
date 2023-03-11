@@ -2,6 +2,19 @@ import Box from '@/components/box';
 import TopTrack from '@/components/top-track';
 import CV from '@/components/icons/cv';
 import GitHub from '@/components/icons/github';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Ugo Romi',
+  description: 'My Playground on the Web',
+  colorScheme: 'dark',
+  keywords: ['Ugo', 'Romi', 'Developer', 'Web'],
+  formatDetection: {
+    email: true,
+    address: false,
+    telephone: false,
+  },
+};
 
 export default function Page() {
   return (
